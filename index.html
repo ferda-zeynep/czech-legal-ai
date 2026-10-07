@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Czech Legal AI — AI-Powered Czech Legal Research</title>
+  <meta name="description" content="AI-powered legal research for Czech legal information, grounded in official court decisions and legislation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent: #10b981;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    header {
+      padding: 32px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo span {
+      color: var(--primary);
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .hero {
+      padding: 88px 0 64px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--primary-hover);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin: 56px 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .sources {
+      margin: 64px 0;
+      padding: 36px;
+      background: rgba(17, 24, 39, 0.5);
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      text-align: center;
+    }
+    .sources h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .source-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .source-tag {
+      background: #1f2937;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+    .disclaimer {
+      padding: 24px;
+      background: rgba(239, 68, 68, 0.05);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 8px;
+      color: #fca5a5;
+      font-size: 0.85rem;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 32px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Czech Legal <span>AI</span></div>
+      <span class="badge">In Active Development</span>
+    </header>
+
+    <section class="hero">
+      <h1>AI-Powered Legal Research Grounded in Official Czech Sources</h1>
+      <p>Search court decisions, analyze precedents, and connect AI assistants directly to official legal databases using Model Context Protocol (MCP).</p>
+      <a href="mailto:hello@czechlegalai.com" class="cta-btn">Get Early Access →</a>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h3>For International Residents & Expats</h3>
+        <p>Overcome language barriers by exploring Czech legal procedures and rights with multi-language semantic search backed by verified legal text.</p>
+      </div>
+      <div class="card">
+        <h3>For Lawyers & Legal Scholars</h3>
+        <p>Accelerate precedent discovery with citation-grounded summaries, cross-referencing rulings from higher Czech courts with zero hallucinations.</p>
+      </div>
+      <div class="card">
+        <h3>MCP & Agentic AI Integration</h3>
+        <p>Designed for developers to integrate directly with Claude Desktop, Cursor, and agentic workflows via open-source Model Context Protocol.</p>
+      </div>
+    </div>
+
+    <div class="sources">
+      <h4>Primary Verified Sources</h4>
+      <div class="source-tags">
+        <span class="source-tag">Ústavní soud (Constitutional Court)</span>
+        <span class="source-tag">Nejvyšší soud (Supreme Court)</span>
+        <span class="source-tag">Nejvyšší správní soud (Supreme Administrative Court)</span>
+        <span class="source-tag">NÁLUS Database</span>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Important Notice:</strong> Czech Legal AI provides technological research and legal information tools. It does not provide formal legal advice or replace qualified legal counsel.
+    </div>
+
+    <footer>
+      <div>&copy; 2026 Czech Legal AI. Open-source initiative.</div>
+      <div>Contact: <a href="mailto:hello@czechlegalai.com">hello@czechlegalai.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
